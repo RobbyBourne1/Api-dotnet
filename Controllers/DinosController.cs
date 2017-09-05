@@ -21,7 +21,7 @@ namespace Api_dotnet.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public DinosModel Get(int id)
         {
             var dinos = new DinosModel();
             List<DinosModel> DinoList = dinos.DinoListGetter();
